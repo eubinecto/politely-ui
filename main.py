@@ -175,9 +175,9 @@ def main():
     st.markdown(desc)
     eng = st.text_input(
         "Type English sentences to translate with honorifics",
-        value="Bring your work to fruition. Done is better than perfect.",
+        value="I don't need flags to know you are really something. I just love you for yourself.",
     )
-    styler = Styler(strict=True, scorer="gpt2")
+    styler = Styler(strict=True)
     if st.button(label="Translate"):
         with st.spinner("Please wait..."):
             kor = translate(eng)
