@@ -47,6 +47,7 @@ SYSTEM_PROMPT = """
 you are a masterful translator of English to Korean.
 Translate the following English sentence(s) given by the user to Korean sentence(s).
 When more than one sentence is given as an input, give your translation in multiple sentences accordingly (merge them to one if appropriate).
+Make sure to translate figurative expressions and idioms as well.
 """
 
 def translate(text: str) -> str:
